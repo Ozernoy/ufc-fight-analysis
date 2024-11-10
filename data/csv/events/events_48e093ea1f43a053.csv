@@ -1,0 +1,15 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"November 06, 2021","New York City, New York, USA",win,Kamaru Usman,Colby Covington,2,0,123,107,1,0,0,0,Welterweight,U-DEC,,5,5:00
+"November 06, 2021","New York City, New York, USA",win,Rose Namajunas,Zhang Weili,0,0,86,83,2,5,0,0,Women's Strawweight,S-DEC,,5,5:00
+"November 06, 2021","New York City, New York, USA",win,Marlon Vera,Frankie Edgar,1,0,88,94,0,3,1,0,Bantamweight,KO/TKO,Kick,3,3:50
+"November 06, 2021","New York City, New York, USA",win,Shane Burgos,Billy Quarantillo,0,0,193,164,0,0,0,0,Featherweight,U-DEC,,3,5:00
+"November 06, 2021","New York City, New York, USA",win,Justin Gaethje,Michael Chandler,1,0,116,103,0,1,0,0,Lightweight,U-DEC,,3,5:00
+"November 06, 2021","New York City, New York, USA",win,Alex Pereira,Andreas Michailidis,1,0,11,3,0,2,0,0,Middleweight,KO/TKO,Flying Knee,2,0:18
+"November 06, 2021","New York City, New York, USA",win,King Green,Al Iaquinta,1,0,28,10,0,0,0,0,Lightweight,KO/TKO,Punches,1,2:25
+"November 06, 2021","New York City, New York, USA",win,Chris Curtis,Phil Hawes,1,0,21,48,0,0,0,0,Middleweight,KO/TKO,Punch,1,4:27
+"November 06, 2021","New York City, New York, USA",win,Nassourdine Imavov,Edmen Shahbazyan,0,0,42,22,0,1,4,0,Middleweight,KO/TKO,Elbows,2,4:52
+"November 06, 2021","New York City, New York, USA",win,Ian Machado Garry,Jordan Williams,1,0,18,22,0,0,0,0,Welterweight,KO/TKO,Punch,1,4:59
+"November 06, 2021","New York City, New York, USA",win,Chris Barnett,Gian Villante,1,0,38,30,0,0,0,0,Heavyweight,KO/TKO,Kick,2,2:23
+"November 06, 2021","New York City, New York, USA",win,Dustin Jacoby,John Allan,0,0,153,77,0,0,0,0,Light Heavyweight,U-DEC,,3,5:00
+"November 06, 2021","New York City, New York, USA",win,Melsik Baghdasaryan,Bruno Souza,0,0,75,46,0,0,0,0,Featherweight,U-DEC,,3,5:00
+"November 06, 2021","New York City, New York, USA",win,Ode Osbourne,CJ Vergara,0,0,79,93,1,0,0,0,Flyweight,U-DEC,,3,5:00

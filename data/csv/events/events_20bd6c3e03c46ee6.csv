@@ -1,0 +1,9 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"May 04, 2001","Atlantic City, New Jersey, USA",win,Randy Couture,Pedro Rizzo,0,1,69,42,3,0,0,0,Heavyweight,U-DEC,,5,5:00
+"May 04, 2001","Atlantic City, New Jersey, USA",win,Carlos Newton,Pat Miletich,0,0,14,28,4,0,1,0,Welterweight,SUB,Bulldog Choke,3,2:50
+"May 04, 2001","Atlantic City, New Jersey, USA",win,Chuck Liddell,Kevin Randleman,1,0,3,0,0,0,0,0,Light Heavyweight,KO/TKO,Punch,1,1:18
+"May 04, 2001","Atlantic City, New Jersey, USA",win,Shonie Carter,Matt Serra,2,0,18,10,2,2,0,3,Welterweight,KO/TKO,Spinning Back Fist,3,4:51
+"May 04, 2001","Atlantic City, New Jersey, USA",win,Semmy Schilt,Pete Williams,2,0,15,6,0,1,0,0,Heavyweight,KO/TKO,Punch,2,1:28
+"May 04, 2001","Atlantic City, New Jersey, USA",win,Matt Lindland,Ricardo Almeida,0,0,22,9,5,0,0,0,Light Heavyweight,DQ,,3,4:21
+"May 04, 2001","Atlantic City, New Jersey, USA",win,BJ Penn,Joey Gilbert,0,0,22,3,2,0,0,0,Lightweight,KO/TKO,Punches,1,4:57
+"May 04, 2001","Atlantic City, New Jersey, USA",win,Tony DeSouza,Steve Berger,0,0,28,2,5,0,0,3,Welterweight,U-DEC,,3,5:00

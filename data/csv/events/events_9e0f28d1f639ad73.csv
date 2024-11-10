@@ -1,0 +1,14 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"July 20, 2019","San Antonio, Texas, USA",win,Leon Edwards,Rafael Dos Anjos,0,0,92,81,3,0,0,0,Welterweight,U-DEC,,5,5:00
+"July 20, 2019","San Antonio, Texas, USA",win,Walt Harris,Aleksei Oleinik,1,0,4,1,0,0,0,0,Heavyweight,KO/TKO,Punch,1,0:12
+"July 20, 2019","San Antonio, Texas, USA",win,Greg Hardy,Juan Adams,0,0,36,3,0,0,0,0,Heavyweight,KO/TKO,Punches,1,0:45
+"July 20, 2019","San Antonio, Texas, USA",win,Dan Hooker,James Vick,1,0,22,7,0,0,0,0,Lightweight,KO/TKO,Punch,1,2:33
+"July 20, 2019","San Antonio, Texas, USA",win,Alexander Hernandez,Francisco Trinaldo,0,0,25,25,0,0,0,0,Lightweight,U-DEC,,3,5:00
+"July 20, 2019","San Antonio, Texas, USA",win,Andrei Arlovski,Ben Rothwell,0,0,152,70,0,0,0,0,Heavyweight,U-DEC,,3,5:00
+"July 20, 2019","San Antonio, Texas, USA",win,Alex Caceres,Steven Peterson,0,0,94,67,0,2,0,0,Featherweight,U-DEC,,3,5:00
+"July 20, 2019","San Antonio, Texas, USA",win,Raquel Pennington,Irene Aldana,0,0,47,52,1,0,0,0,Women's Bantamweight,S-DEC,,3,5:00
+"July 20, 2019","San Antonio, Texas, USA",win,Klidson Abreu,Sam Alvey,0,0,36,28,1,0,0,0,Light Heavyweight,U-DEC,,3,5:00
+"July 20, 2019","San Antonio, Texas, USA",win,Jennifer Maia,Roxanne Modafferi,0,0,83,29,0,0,0,0,Women's Flyweight,U-DEC,,3,5:00
+"July 20, 2019","San Antonio, Texas, USA",win,Ray Borg,Gabriel Silva,0,0,15,8,6,1,1,0,Bantamweight,U-DEC,,3,5:00
+"July 20, 2019","San Antonio, Texas, USA",win,Mario Bautista,Jin Soo Son,0,0,129,95,0,2,0,0,Bantamweight,U-DEC,,3,5:00
+"July 20, 2019","San Antonio, Texas, USA",win,Felipe Colares,Domingo Pilarte,0,0,23,11,2,2,0,1,Bantamweight,S-DEC,,3,5:00

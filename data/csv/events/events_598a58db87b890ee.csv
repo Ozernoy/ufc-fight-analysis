@@ -1,0 +1,11 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"March 01, 2008","Columbus, Ohio, USA",win,Anderson Silva,Dan Henderson,0,0,47,20,0,1,1,0,Middleweight,SUB,Rear Naked Choke,2,4:52
+"March 01, 2008","Columbus, Ohio, USA",win,Heath Herring,Cheick Kongo,1,0,57,45,3,5,0,0,Heavyweight,S-DEC,,3,5:00
+"March 01, 2008","Columbus, Ohio, USA",win,Chris Leben,Alessio Sakara,1,0,24,13,0,0,0,0,Middleweight,KO/TKO,Punches,1,3:16
+"March 01, 2008","Columbus, Ohio, USA",win,Yushin Okami,Evan Tanner,2,0,26,19,0,1,0,0,Middleweight,KO/TKO,Knee,2,3:00
+"March 01, 2008","Columbus, Ohio, USA",win,Jon Fitch,Chris Wilson,0,0,40,22,4,0,0,1,Welterweight,U-DEC,,3,5:00
+"March 01, 2008","Columbus, Ohio, USA",win,Andrei Arlovski,Jake O'Brien,0,0,14,4,1,2,0,0,Heavyweight,KO/TKO,Punches,2,4:17
+"March 01, 2008","Columbus, Ohio, USA",win,Luigi Fioravanti,Luke Cummo,0,0,32,16,13,0,0,0,Welterweight,U-DEC,,3,5:00
+"March 01, 2008","Columbus, Ohio, USA",win,Josh Koscheck,Dustin Hazelett,1,0,24,20,1,0,0,2,Welterweight,KO/TKO,Kick,2,1:24
+"March 01, 2008","Columbus, Ohio, USA",win,Diego Sanchez,David Bielkheden,0,0,24,1,1,0,0,0,Welterweight,KO/TKO,Punches,1,4:43
+"March 01, 2008","Columbus, Ohio, USA",win,Jorge Gurgel,John Halverson,0,0,68,44,1,0,0,2,Lightweight,U-DEC,,3,5:00

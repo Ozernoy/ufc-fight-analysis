@@ -1,0 +1,13 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"August 17, 2019","Anaheim, California, USA",win,Stipe Miocic,Daniel Cormier,1,0,123,181,1,1,0,0,Heavyweight,KO/TKO,Punches,4,4:09
+"August 17, 2019","Anaheim, California, USA",win,Nate Diaz,Anthony Pettis,1,0,114,69,1,0,0,1,Welterweight,U-DEC,,3,5:00
+"August 17, 2019","Anaheim, California, USA",win,Paulo Costa,Yoel Romero,1,1,118,125,0,1,0,0,Middleweight,U-DEC,,3,5:00
+"August 17, 2019","Anaheim, California, USA",win,Sodiq Yusuff,Gabriel Benitez,1,0,34,24,0,0,0,0,Featherweight,KO/TKO,Punch,1,4:14
+"August 17, 2019","Anaheim, California, USA",win,Derek Brunson,Ian Heinisch,0,0,81,58,2,0,0,0,Middleweight,U-DEC,,3,5:00
+"August 17, 2019","Anaheim, California, USA",win,Khama Worthy,Devonte Smith,1,0,21,15,0,0,0,0,Lightweight,KO/TKO,Punch,1,4:15
+"August 17, 2019","Anaheim, California, USA",win,Cory Sandhagen,Raphael Assuncao,0,0,62,45,0,4,0,0,Bantamweight,U-DEC,,3,5:00
+"August 17, 2019","Anaheim, California, USA",win,Drakkar Klose,Christos Giagos,0,0,99,87,2,2,0,1,Lightweight,U-DEC,,3,5:00
+"August 17, 2019","Anaheim, California, USA",win,Casey Kenney,Manny Bermudez,0,0,43,37,2,3,1,0,Catch Weight,U-DEC,,3,5:00
+"August 17, 2019","Anaheim, California, USA",win,Hannah Cifers,Jodie Esquibel,0,0,70,43,1,3,1,0,Women's Strawweight,U-DEC,,3,5:00
+"August 17, 2019","Anaheim, California, USA",win,Kyung Ho Kang,Brandon Davis,1,0,50,77,3,1,0,0,Bantamweight,S-DEC,,3,5:00
+"August 17, 2019","Anaheim, California, USA",win,Sabina Mazo,Shana Dobson,0,0,108,33,4,0,0,0,Women's Flyweight,U-DEC,,3,5:00

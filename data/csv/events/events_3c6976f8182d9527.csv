@@ -1,0 +1,13 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"May 06, 2023","Newark, New Jersey, USA",win,Aljamain Sterling,Henry Cejudo,0,0,135,99,4,3,0,0,Bantamweight,S-DEC,,5,5:00
+"May 06, 2023","Newark, New Jersey, USA",win,Belal Muhammad,Gilbert Burns,0,0,132,81,0,0,0,0,Welterweight,U-DEC,,5,5:00
+"May 06, 2023","Newark, New Jersey, USA",win,Yan Xiaonan,Jessica Andrade,1,0,26,12,0,0,0,0,Women's Strawweight,KO/TKO,Punch,1,2:20
+"May 06, 2023","Newark, New Jersey, USA",win,Movsar Evloev,Diego Lopes,0,0,88,37,4,0,0,4,Featherweight,U-DEC,,3,5:00
+"May 06, 2023","Newark, New Jersey, USA",win,Charles Jourdain,Kron Gracie,0,0,80,32,0,0,0,0,Featherweight,U-DEC,,3,5:00
+"May 06, 2023","Newark, New Jersey, USA",win,Matt Frevola,Drew Dober,1,0,35,20,0,0,0,0,Lightweight,KO/TKO,Punch,1,4:08
+"May 06, 2023","Newark, New Jersey, USA",win,Kennedy Nzechukwu,Devin Clark,0,0,62,36,0,1,1,0,Light Heavyweight,SUB,Guillotine Choke,2,2:28
+"May 06, 2023","Newark, New Jersey, USA",win,Khaos Williams,Rolando Bedoya,0,0,130,149,0,0,0,0,Welterweight,S-DEC,,3,5:00
+"May 06, 2023","Newark, New Jersey, USA",win,Virna Jandiroba,Marina Rodriguez,0,0,27,33,3,0,0,0,Women's Strawweight,U-DEC,,3,5:00
+"May 06, 2023","Newark, New Jersey, USA",win,Parker Porter,Braxton Smith,0,0,25,14,0,0,0,0,Heavyweight,KO/TKO,Punches,1,2:10
+"May 06, 2023","Newark, New Jersey, USA",win,Ikram Aliskerov,Phil Hawes,1,0,20,17,0,0,0,0,Middleweight,KO/TKO,Punches,1,2:10
+"May 06, 2023","Newark, New Jersey, USA",win,Claudio Ribeiro,Joseph Holmes,1,0,37,17,1,1,0,0,Middleweight,KO/TKO,Punches,2,3:21

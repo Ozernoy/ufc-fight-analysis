@@ -1,0 +1,15 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"March 04, 2023","Las Vegas, Nevada, USA",win,Jon Jones,Ciryl Gane,0,0,5,6,2,0,1,0,Heavyweight,SUB,Guillotine Choke,1,2:04
+"March 04, 2023","Las Vegas, Nevada, USA",win,Alexa Grasso,Valentina Shevchenko,0,0,59,87,0,4,1,0,Women's Flyweight,SUB,Rear Naked Choke,4,4:34
+"March 04, 2023","Las Vegas, Nevada, USA",win,Shavkat Rakhmonov,Geoff Neal,0,0,113,69,0,0,1,0,Welterweight,SUB,Rear Naked Choke,3,4:17
+"March 04, 2023","Las Vegas, Nevada, USA",win,Mateusz Gamrot,Jalin Turner,0,1,29,40,4,0,0,0,Lightweight,S-DEC,,3,5:00
+"March 04, 2023","Las Vegas, Nevada, USA",win,Bo Nickal,Jamie Pickett,0,0,1,1,1,0,2,0,Middleweight,SUB,Arm Triangle,1,2:54
+"March 04, 2023","Las Vegas, Nevada, USA",win,Cody Garbrandt,Trevin Jones,0,0,26,20,2,1,0,1,Bantamweight,U-DEC,,3,5:00
+"March 04, 2023","Las Vegas, Nevada, USA",win,Dricus Du Plessis,Derek Brunson,1,0,71,37,1,1,1,1,Middleweight,KO/TKO,Punches,2,4:59
+"March 04, 2023","Las Vegas, Nevada, USA",win,Amanda Ribas,Viviane Araujo,0,0,98,46,2,0,0,2,Women's Flyweight,U-DEC,,3,5:00
+"March 04, 2023","Las Vegas, Nevada, USA",win,Marc-Andre Barriault,Julian Marquez,0,0,109,82,0,0,0,0,Middleweight,KO/TKO,Punches,2,4:12
+"March 04, 2023","Las Vegas, Nevada, USA",win,Ian Machado Garry,Song Kenan,1,1,127,55,0,2,0,0,Welterweight,KO/TKO,Punches,3,4:22
+"March 04, 2023","Las Vegas, Nevada, USA",win,Cameron Saaiman,Mana Martinez,1,0,117,60,1,0,0,0,Bantamweight,M-DEC,,3,5:00
+"March 04, 2023","Las Vegas, Nevada, USA",win,Tabatha Ricci,Jessica Penne,0,0,36,6,4,0,1,0,Women's Strawweight,SUB,Armbar,2,2:14
+"March 04, 2023","Las Vegas, Nevada, USA",win,Farid Basharat,Da'Mon Blackshear,0,0,58,46,3,1,0,1,Bantamweight,U-DEC,,3,5:00
+"March 04, 2023","Las Vegas, Nevada, USA",win,Loik Radzhabov,Esteban Ribovics,0,1,40,66,11,0,0,1,Lightweight,U-DEC,,3,5:00

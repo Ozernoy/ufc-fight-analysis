@@ -1,0 +1,14 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"June 09, 2018","Chicago, Illinois, USA",win,Robert Whittaker,Yoel Romero,0,2,128,111,0,3,0,0,Middleweight,S-DEC,,5,5:00
+"June 09, 2018","Chicago, Illinois, USA",win,Colby Covington,Rafael Dos Anjos,0,0,99,105,7,3,0,0,Welterweight,U-DEC,,5,5:00
+"June 09, 2018","Chicago, Illinois, USA",win,Holly Holm,Megan Anderson,0,0,47,26,4,0,1,0,Women's Featherweight,U-DEC,,3,5:00
+"June 09, 2018","Chicago, Illinois, USA",win,Tai Tuivasa,Andrei Arlovski,1,0,54,51,0,0,0,0,Heavyweight,U-DEC,,3,5:00
+"June 09, 2018","Chicago, Illinois, USA",ncnc,CM Punk,Mike Jackson,0,0,19,64,1,1,0,0,Welterweight,Overturned,,3,5:00
+"June 09, 2018","Chicago, Illinois, USA",win,Curtis Blaydes,Alistair Overeem,0,0,37,7,4,0,0,2,Heavyweight,KO/TKO,Elbows,3,2:56
+"June 09, 2018","Chicago, Illinois, USA",win,Claudia Gadelha,Carla Esparza,0,0,26,43,4,2,1,0,Women's Strawweight,S-DEC,,3,5:00
+"June 09, 2018","Chicago, Illinois, USA",win,Mirsad Bektic,Ricardo Lamas,0,0,31,34,2,0,0,2,Featherweight,S-DEC,,3,5:00
+"June 09, 2018","Chicago, Illinois, USA",win,Chris de la Rocha,Rashad Coulter,0,0,40,30,3,0,2,0,Heavyweight,KO/TKO,Punches,2,3:53
+"June 09, 2018","Chicago, Illinois, USA",win,Anthony Smith,Rashad Evans,1,0,6,1,0,0,0,0,Light Heavyweight,KO/TKO,Knee,1,0:53
+"June 09, 2018","Chicago, Illinois, USA",win,Sergio Pettis,Joseph Benavidez,0,0,74,59,0,2,0,0,Flyweight,S-DEC,,3,5:00
+"June 09, 2018","Chicago, Illinois, USA",win,Charles Oliveira,Clay Guida,0,0,14,9,0,0,1,0,Lightweight,SUB,Guillotine Choke,1,2:18
+"June 09, 2018","Chicago, Illinois, USA",win,Dan Ige,Mike Santiago,0,0,25,0,1,0,0,0,Featherweight,KO/TKO,Punches,1,0:50

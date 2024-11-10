@@ -1,0 +1,9 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"August 01, 2020","Las Vegas, Nevada, USA",win,Derek Brunson,Edmen Shahbazyan,0,0,88,35,4,0,0,0,Middleweight,KO/TKO,Punches,3,0:26
+"August 01, 2020","Las Vegas, Nevada, USA",win,Jennifer Maia,Joanne Wood,0,0,20,26,0,1,1,0,Women's Flyweight,SUB,Armbar,1,4:29
+"August 01, 2020","Las Vegas, Nevada, USA",win,Vicente Luque,Randy Brown,2,0,64,61,0,1,0,0,Welterweight,KO/TKO,Knee,2,4:56
+"August 01, 2020","Las Vegas, Nevada, USA",win,King Green,Lando Vannata,1,0,115,54,3,1,0,0,Lightweight,U-DEC,,3,5:00
+"August 01, 2020","Las Vegas, Nevada, USA",win,Jonathan Martinez,Frankie Saenz,3,0,79,39,1,1,0,0,Bantamweight,KO/TKO,Knee,3,0:57
+"August 01, 2020","Las Vegas, Nevada, USA",win,Nate Maness,Johnny Munoz,0,0,21,49,1,2,0,1,Featherweight,U-DEC,,3,5:00
+"August 01, 2020","Las Vegas, Nevada, USA",win,Jamall Emmers,Vince Cachero,0,0,103,76,5,0,0,0,Featherweight,U-DEC,,3,5:00
+"August 01, 2020","Las Vegas, Nevada, USA",drawdraw,Chris Gutierrez,Cody Durden,0,0,66,36,1,2,1,1,Bantamweight,U-DEC,,3,5:00

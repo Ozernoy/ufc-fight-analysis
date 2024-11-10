@@ -1,0 +1,14 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Alexandre Pantoja,Steve Erceg,0,0,125,111,9,1,0,0,Flyweight,U-DEC,,5,5:00
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Jose Aldo,Jonathan Martinez,0,0,77,52,1,0,0,0,Bantamweight,U-DEC,,3,5:00
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Anthony Smith,Vitor Petrino,0,0,11,10,0,1,1,0,Light Heavyweight,SUB,Guillotine Choke,1,2:00
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Michel Pereira,Ihor Potieria,0,0,6,2,0,0,1,0,Middleweight,SUB,Guillotine Choke,1,0:54
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Caio Borralho,Paul Craig,1,0,36,22,0,0,0,0,Middleweight,KO/TKO,Punches,2,2:10
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Joanderson Brito,Jack Shore,0,0,30,24,1,0,0,0,Featherweight,KO/TKO,,2,3:35
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Iasmin Lucindo,Karolina Kowalkiewicz,0,0,83,42,2,0,0,0,Women's Strawweight,U-DEC,,3,5:00
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Myktybek Orolbai,Elves Brener,1,0,65,48,5,3,0,0,Lightweight,U-DEC,,3,5:00
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Drakkar Klose,Joaquim Silva,0,1,70,59,0,0,0,1,Lightweight,U-DEC,,3,5:00
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Mauricio Ruffy,Jamie Mullarkey,1,0,25,14,0,0,0,0,Lightweight,KO/TKO,Punches,1,4:42
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Dione Barbosa,Ernesta Kareckaite,0,0,39,53,2,1,1,0,Women's Flyweight,U-DEC,,3,5:00
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Ismael Bonfim,Vinc Pichel,0,0,111,61,1,1,0,0,Lightweight,U-DEC,,3,5:00
+"May 04, 2024","Rio de Janeiro, Rio de Janeiro, Brazil",win,Alessandro Costa,Kevin Borjas,1,0,46,18,0,0,0,0,Flyweight,KO/TKO,Punches,2,1:35

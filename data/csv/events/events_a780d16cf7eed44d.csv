@@ -1,0 +1,14 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"June 24, 2023","Jacksonville, Florida, USA",win,Ilia Topuria,Josh Emmett,1,0,152,87,3,0,0,0,Featherweight,U-DEC,,5,5:00
+"June 24, 2023","Jacksonville, Florida, USA",win,Maycee Barber,Amanda Ribas,0,0,81,35,0,2,0,0,Women's Flyweight,KO/TKO,Elbows,2,3:42
+"June 24, 2023","Jacksonville, Florida, USA",ncnc,Austen Lane,Justin Tafa,0,0,3,0,0,0,0,0,Heavyweight,CNC,,1,0:29
+"June 24, 2023","Jacksonville, Florida, USA",win,David Onama,Gabriel Santos,1,0,53,39,0,2,0,2,Featherweight,KO/TKO,Punch,2,4:13
+"June 24, 2023","Jacksonville, Florida, USA",win,Brendan Allen,Bruno Silva,1,0,30,20,0,0,1,0,Middleweight,SUB,Rear Naked Choke,1,4:39
+"June 24, 2023","Jacksonville, Florida, USA",win,Neil Magny,Phil Rowe,0,0,29,34,0,1,0,0,Welterweight,S-DEC,,3,5:00
+"June 24, 2023","Jacksonville, Florida, USA",win,Randy Brown,Wellington Turman,0,0,64,55,2,0,0,0,Welterweight,U-DEC,,3,5:00
+"June 24, 2023","Jacksonville, Florida, USA",win,Mateusz Rebecki,Loik Radzhabov,2,0,54,19,1,0,1,0,Lightweight,KO/TKO,Punch,2,2:36
+"June 24, 2023","Jacksonville, Florida, USA",win,Tabatha Ricci,Gillian Robertson,0,0,100,76,3,1,0,0,Women's Strawweight,U-DEC,,3,5:00
+"June 24, 2023","Jacksonville, Florida, USA",win,Joshua Van,Zhalgas Zhumagulov,0,0,120,103,0,1,0,0,Flyweight,S-DEC,,3,5:00
+"June 24, 2023","Jacksonville, Florida, USA",win,Chepe Mariscal,Trevor Peek,0,0,71,51,4,0,1,0,Lightweight,U-DEC,,3,5:00
+"June 24, 2023","Jacksonville, Florida, USA",win,Jack Jenkins,Jamall Emmers,0,0,59,57,1,1,0,0,Featherweight,S-DEC,,3,5:00
+"June 24, 2023","Jacksonville, Florida, USA",win,Sedriques Dumas,Cody Brundage,0,0,17,3,0,2,0,1,Middleweight,U-DEC,,3,5:00

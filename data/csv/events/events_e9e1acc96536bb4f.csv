@@ -1,0 +1,13 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"July 01, 2023","Las Vegas, Nevada, USA",win,Sean Strickland,Abus Magomedov,1,0,81,47,0,1,0,0,Middleweight,KO/TKO,Punches,2,4:20
+"July 01, 2023","Las Vegas, Nevada, USA",win,Grant Dawson,Damir Ismagulov,0,0,30,13,3,0,1,0,Lightweight,U-DEC,,3,5:00
+"July 01, 2023","Las Vegas, Nevada, USA",win,Michael Morales,Max Griffin,0,0,72,36,1,0,0,0,Welterweight,U-DEC,,3,5:00
+"July 01, 2023","Las Vegas, Nevada, USA",win,Ariane da Silva,Melissa Gatto,0,0,66,85,1,0,0,0,Women's Flyweight,S-DEC,,3,5:00
+"July 01, 2023","Las Vegas, Nevada, USA",win,Benoit Saint Denis,Ismael Bonfim,0,0,13,14,2,0,2,0,Lightweight,SUB,Rear Naked Choke,1,4:48
+"July 01, 2023","Las Vegas, Nevada, USA",win,Nursulton Ruziboev,Brunno Ferreira,0,0,6,3,1,0,0,0,Middleweight,KO/TKO,Punches,1,1:17
+"July 01, 2023","Las Vegas, Nevada, USA",win,Rinat Fakhretdinov,Kevin Lee,1,0,11,3,0,0,1,0,Welterweight,SUB,Guillotine Choke,1,0:55
+"July 01, 2023","Las Vegas, Nevada, USA",win,Joanderson Brito,Westin Wilson,0,0,22,4,1,0,0,2,Featherweight,KO/TKO,Punches,1,2:54
+"July 01, 2023","Las Vegas, Nevada, USA",win,Karol Rosa,Yana Santos,0,0,66,95,1,0,0,0,Women's Featherweight,S-DEC,,3,5:00
+"July 01, 2023","Las Vegas, Nevada, USA",win,Elves Brener,Guram Kutateladze,1,0,65,85,2,1,0,0,Lightweight,KO/TKO,Punch,3,3:17
+"July 01, 2023","Las Vegas, Nevada, USA",win,Luana Carolina,Ivana Petrovic,0,0,41,22,1,2,0,2,Women's Flyweight,U-DEC,,3,5:00
+"July 01, 2023","Las Vegas, Nevada, USA",win,Alexandr Romanov,Blagoy Ivanov,0,0,85,44,2,0,0,0,Heavyweight,U-DEC,,3,5:00

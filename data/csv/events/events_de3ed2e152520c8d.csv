@@ -1,0 +1,10 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"March 03, 2007","Columbus, Ohio, USA",win,Randy Couture,Tim Sylvia,1,0,73,25,7,0,0,0,Heavyweight,U-DEC,,5,5:00
+"March 03, 2007","Columbus, Ohio, USA",win,Martin Kampmann,Drew McFedries,0,1,15,16,1,0,1,0,Middleweight,SUB,Arm Triangle,1,4:06
+"March 03, 2007","Columbus, Ohio, USA",win,Rich Franklin,Jason MacDonald,0,0,49,16,1,1,0,0,Middleweight,KO/TKO,,2,5:00
+"March 03, 2007","Columbus, Ohio, USA",win,Matt Hughes,Chris Lytle,0,0,13,5,2,0,3,3,Welterweight,U-DEC,,3,5:00
+"March 03, 2007","Columbus, Ohio, USA",win,Jason Lambert,Renato Sobral,2,0,19,5,2,1,0,1,Light Heavyweight,KO/TKO,Punch,2,3:36
+"March 03, 2007","Columbus, Ohio, USA",win,Matt Hamill,Rex Holman,0,0,29,11,0,0,0,0,Light Heavyweight,KO/TKO,Punches,1,4:00
+"March 03, 2007","Columbus, Ohio, USA",win,Jon Fitch,Luigi Fioravanti,0,0,19,14,2,0,2,0,Welterweight,SUB,Rear Naked Choke,2,3:05
+"March 03, 2007","Columbus, Ohio, USA",win,Gleison Tibau,Jason Dent,0,0,36,12,5,0,1,0,Lightweight,U-DEC,,3,5:00
+"March 03, 2007","Columbus, Ohio, USA",win,Jamie Varner,Jason Gilliam,0,0,7,0,1,0,2,0,Lightweight,SUB,Rear Naked Choke,1,1:34

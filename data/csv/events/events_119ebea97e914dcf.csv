@@ -1,0 +1,13 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"October 03, 2015","Houston, Texas, USA",win,Daniel Cormier,Alexander Gustafsson,0,1,140,120,1,1,0,0,Light Heavyweight,S-DEC,,5,5:00
+"October 03, 2015","Houston, Texas, USA",win,Ryan Bader,Rashad Evans,0,0,52,25,1,0,0,0,Light Heavyweight,U-DEC,,3,5:00
+"October 03, 2015","Houston, Texas, USA",win,Ruslan Magomedov,Shawn Jordan,0,0,71,20,0,1,0,0,Heavyweight,U-DEC,,3,5:00
+"October 03, 2015","Houston, Texas, USA",win,Joseph Benavidez,Ali Bagautinov,0,0,48,31,0,0,0,0,Flyweight,U-DEC,,3,5:00
+"October 03, 2015","Houston, Texas, USA",win,Julianna Pena,Jessica Eye,0,0,34,30,3,1,3,1,Women's Bantamweight,U-DEC,,3,5:00
+"October 03, 2015","Houston, Texas, USA",win,Yair Rodriguez,Dan Hooker,0,0,52,19,2,1,0,0,Featherweight,U-DEC,,3,5:00
+"October 03, 2015","Houston, Texas, USA",win,Albert Tumenov,Alan Jouban,1,0,19,17,0,0,0,0,Welterweight,KO/TKO,Punches,1,2:55
+"October 03, 2015","Houston, Texas, USA",win,Adriano Martins,Islam Makhachev,1,0,3,4,0,0,0,0,Lightweight,KO/TKO,Punch,1,1:46
+"October 03, 2015","Houston, Texas, USA",win,Rose Namajunas,Angela Hill,0,0,13,12,1,0,1,0,Women's Strawweight,SUB,Rear Naked Choke,1,2:47
+"October 03, 2015","Houston, Texas, USA",win,Sage Northcutt,Francisco Trevino,0,0,21,1,1,0,0,0,Lightweight,KO/TKO,Punches,1,0:57
+"October 03, 2015","Houston, Texas, USA",win,Sergio Pettis,Chris Cariaso,1,0,37,37,3,0,0,1,Flyweight,U-DEC,,3,5:00
+"October 03, 2015","Houston, Texas, USA",win,Derrick Lewis,Viktor Pesta,0,0,41,8,0,5,0,0,Heavyweight,KO/TKO,Punches,3,1:15

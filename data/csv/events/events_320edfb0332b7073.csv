@@ -1,0 +1,11 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"July 31, 2021","Las Vegas, Nevada, USA",win,Sean Strickland,Uriah Hall,0,0,186,107,4,0,0,0,Middleweight,U-DEC,,5,5:00
+"July 31, 2021","Las Vegas, Nevada, USA",win,Cheyanne Vlismas,Gloria de Paula,1,0,11,5,1,0,0,0,Women's Strawweight,KO/TKO,Kick,1,1:00
+"July 31, 2021","Las Vegas, Nevada, USA",win,Jared Gooden,Niklas Stolze,1,0,14,7,1,0,0,0,Welterweight,KO/TKO,Punch,1,1:08
+"July 31, 2021","Las Vegas, Nevada, USA",win,Melsik Baghdasaryan,Collin Anglin,1,0,44,25,0,1,0,0,Featherweight,KO/TKO,Kick,2,1:50
+"July 31, 2021","Las Vegas, Nevada, USA",win,Jason Witt,Bryan Barberena,1,0,35,50,8,0,1,0,Welterweight,M-DEC,,3,5:00
+"July 31, 2021","Las Vegas, Nevada, USA",win,Chris Gruetzemacher,Rafa Garcia,0,0,100,72,0,5,0,1,Lightweight,U-DEC,,3,5:00
+"July 31, 2021","Las Vegas, Nevada, USA",drawdraw,Danny Chavez,Kai Kamaka,0,0,41,48,1,0,0,0,Featherweight,M-DEC,,3,5:00
+"July 31, 2021","Las Vegas, Nevada, USA",win,Jinh Yu Frey,Ashley Yoder,0,0,88,91,0,0,0,0,Women's Strawweight,U-DEC,,3,5:00
+"July 31, 2021","Las Vegas, Nevada, USA",win,Zarrukh Adashev,Ryan Benoit,0,1,78,37,0,0,1,0,Flyweight,U-DEC,,3,5:00
+"July 31, 2021","Las Vegas, Nevada, USA",win,Phil Rowe,Orion Cosce,1,0,46,22,0,2,0,0,Welterweight,KO/TKO,Punches,2,4:21

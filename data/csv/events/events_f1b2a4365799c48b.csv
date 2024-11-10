@@ -1,0 +1,13 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"March 16, 2013","Montreal, Quebec, Canada",win,Georges St-Pierre,Nick Diaz,0,0,105,41,9,0,0,1,Welterweight,U-DEC,,5,5:00
+"March 16, 2013","Montreal, Quebec, Canada",win,Johny Hendricks,Carlos Condit,0,0,30,42,12,0,0,0,Welterweight,U-DEC,,3,5:00
+"March 16, 2013","Montreal, Quebec, Canada",win,Jake Ellenberger,Nate Marquardt,1,0,13,13,0,0,0,0,Welterweight,KO/TKO,Punch,1,3:00
+"March 16, 2013","Montreal, Quebec, Canada",win,Chris Camozzi,Nick Ring,0,0,64,86,0,0,0,0,Middleweight,S-DEC,,3,5:00
+"March 16, 2013","Montreal, Quebec, Canada",win,Mike Ricci,Colin Fletcher,0,0,47,37,2,0,0,0,Lightweight,U-DEC,,3,5:00
+"March 16, 2013","Montreal, Quebec, Canada",win,Patrick Cote,Bobby Voelker,0,0,72,83,0,4,0,0,Welterweight,U-DEC,,3,5:00
+"March 16, 2013","Montreal, Quebec, Canada",win,Darren Elkins,Antonio Carvalho,1,0,14,9,0,0,0,0,Featherweight,KO/TKO,Punch,1,3:06
+"March 16, 2013","Montreal, Quebec, Canada",win,Jordan Mein,Dan Miller,1,0,29,11,0,1,0,1,Welterweight,KO/TKO,Punches,1,4:42
+"March 16, 2013","Montreal, Quebec, Canada",win,John Makdessi,Daron Cruickshank,0,0,86,51,0,0,0,0,Lightweight,U-DEC,,3,5:00
+"March 16, 2013","Montreal, Quebec, Canada",win,Rick Story,Quinn Mulhern,1,0,20,9,1,0,0,0,Welterweight,KO/TKO,Punch,1,3:05
+"March 16, 2013","Montreal, Quebec, Canada",win,TJ Dillashaw,Issei Tamura,1,0,30,11,2,0,0,0,Bantamweight,KO/TKO,Kick,2,0:26
+"March 16, 2013","Montreal, Quebec, Canada",win,George Roop,Reuben Duran,0,0,33,30,2,1,1,0,Bantamweight,U-DEC,,3,5:00

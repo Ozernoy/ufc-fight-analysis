@@ -1,0 +1,16 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"March 18, 2023","London, England, United Kingdom",win,Leon Edwards,Kamaru Usman,0,0,120,87,0,4,0,0,Welterweight,M-DEC,,5,5:00
+"March 18, 2023","London, England, United Kingdom",win,Justin Gaethje,Rafael Fiziev,0,0,103,97,1,0,0,0,Lightweight,M-DEC,,3,5:00
+"March 18, 2023","London, England, United Kingdom",win,Gunnar Nelson,Bryan Barberena,0,0,10,7,1,0,1,0,Welterweight,SUB,Armbar,1,4:51
+"March 18, 2023","London, England, United Kingdom",win,Jennifer Maia,Casey O'Neill,0,0,145,137,0,0,0,0,Women's Flyweight,U-DEC,,3,5:00
+"March 18, 2023","London, England, United Kingdom",win,Marvin Vettori,Roman Dolidze,0,0,106,71,0,0,0,0,Middleweight,U-DEC,,3,5:00
+"March 18, 2023","London, England, United Kingdom",win,Jack Shore,Makwan Amirkhani,0,0,28,10,1,1,1,0,Featherweight,SUB,Rear Naked Choke,2,4:27
+"March 18, 2023","London, England, United Kingdom",win,Chris Duncan,Omar Morales,0,0,53,47,5,0,0,0,Lightweight,S-DEC,,3,5:00
+"March 18, 2023","London, England, United Kingdom",win,Yanal Ashmouz,Sam Patterson,0,0,15,2,1,0,0,0,Lightweight,KO/TKO,Punches,1,1:15
+"March 18, 2023","London, England, United Kingdom",win,Muhammad Mokaev,Jafel Filho,0,0,16,9,4,0,2,2,Flyweight,SUB,Neck Crank,3,4:32
+"March 18, 2023","London, England, United Kingdom",win,Lerone Murphy,Gabriel Santos,0,0,93,69,1,5,0,0,Featherweight,S-DEC,,3,5:00
+"March 18, 2023","London, England, United Kingdom",win,Christian Leroy Duncan,Dusko Todorovic,0,0,9,4,0,0,0,0,Middleweight,KO/TKO,,1,1:52
+"March 18, 2023","London, England, United Kingdom",win,Jake Hadley,Malcolm Gordon,1,0,10,3,0,0,0,0,Flyweight,KO/TKO,Punch,1,1:01
+"March 18, 2023","London, England, United Kingdom",win,Joanne Wood,Luana Carolina,0,0,131,100,2,0,0,0,Women's Flyweight,S-DEC,,3,5:00
+"March 18, 2023","London, England, United Kingdom",drawdraw,Jai Herbert,Ludovit Klein,0,0,43,47,1,2,0,0,Lightweight,M-DEC,,3,5:00
+"March 18, 2023","London, England, United Kingdom",win,Veronica Hardy,Juliana Miller,0,0,62,30,4,0,0,3,Women's Flyweight,U-DEC,,3,5:00

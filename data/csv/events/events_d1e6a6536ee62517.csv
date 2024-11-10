@@ -1,0 +1,12 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"December 08, 2012","Seattle, Washington, USA",win,Benson Henderson,Nate Diaz,1,0,124,30,8,0,0,2,Lightweight,U-DEC,,5,5:00
+"December 08, 2012","Seattle, Washington, USA",win,Alexander Gustafsson,Mauricio Rua,0,0,72,41,6,1,0,1,Light Heavyweight,U-DEC,,3,5:00
+"December 08, 2012","Seattle, Washington, USA",win,Rory MacDonald,BJ Penn,0,0,116,24,1,0,0,0,Welterweight,U-DEC,,3,5:00
+"December 08, 2012","Seattle, Washington, USA",win,Matt Brown,Mike Swick,1,0,25,9,1,0,2,0,Welterweight,KO/TKO,Punches,2,2:31
+"December 08, 2012","Seattle, Washington, USA",win,Yves Edwards,Jeremy Stephens,1,0,8,5,0,0,0,0,Lightweight,KO/TKO,Punch,1,1:55
+"December 08, 2012","Seattle, Washington, USA",win,Raphael Assuncao,Mike Easton,0,0,57,30,0,0,0,0,Bantamweight,U-DEC,,3,5:00
+"December 08, 2012","Seattle, Washington, USA",win,Ramsey Nijem,Joe Proctor,1,0,49,21,5,0,0,4,Lightweight,U-DEC,,3,5:00
+"December 08, 2012","Seattle, Washington, USA",win,Daron Cruickshank,Henry Martinez,1,0,52,21,0,0,0,0,Lightweight,KO/TKO,Kick,2,2:57
+"December 08, 2012","Seattle, Washington, USA",win,Abel Trujillo,Marcus LeVesseur,1,0,57,9,1,2,2,0,Lightweight,KO/TKO,Knees,2,3:56
+"December 08, 2012","Seattle, Washington, USA",win,Dennis Siver,Nam Phan,0,0,128,24,2,0,0,0,Featherweight,U-DEC,,3,5:00
+"December 08, 2012","Seattle, Washington, USA",win,Scott Jorgensen,John Albert,0,0,12,5,0,0,1,1,Bantamweight,SUB,Rear Naked Choke,1,4:59

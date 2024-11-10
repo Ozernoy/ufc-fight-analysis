@@ -1,0 +1,14 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"March 13, 2021","Las Vegas, Nevada, USA",ncnc,Leon Edwards,Belal Muhammad,0,0,19,8,0,0,0,0,Welterweight,CNC,,2,0:18
+"March 13, 2021","Las Vegas, Nevada, USA",win,Ryan Spann,Misha Cirkunov,1,0,16,5,0,0,0,0,Light Heavyweight,KO/TKO,Punches,1,1:11
+"March 13, 2021","Las Vegas, Nevada, USA",win,Dan Ige,Gavin Tucker,1,0,1,1,0,0,0,0,Featherweight,KO/TKO,Punch,1,0:22
+"March 13, 2021","Las Vegas, Nevada, USA",win,Davey Grant,Jonathan Martinez,1,1,48,29,0,0,0,0,Bantamweight,KO/TKO,Punch,2,3:03
+"March 13, 2021","Las Vegas, Nevada, USA",win,Matheus Nicolau,Manel Kape,0,0,55,61,2,0,1,0,Flyweight,S-DEC,,3,5:00
+"March 13, 2021","Las Vegas, Nevada, USA",ncnc,Eryk Anders,Darren Stewart,1,0,43,15,3,0,0,0,Middleweight,CNC,,1,4:37
+"March 13, 2021","Las Vegas, Nevada, USA",win,Angela Hill,Ashley Yoder,0,0,77,34,1,2,0,0,Women's Strawweight,U-DEC,,3,5:00
+"March 13, 2021","Las Vegas, Nevada, USA",win,Charles Jourdain,Marcelo Rojo,2,0,106,74,0,1,0,0,Featherweight,KO/TKO,Punch,3,4:31
+"March 13, 2021","Las Vegas, Nevada, USA",win,Rani Yahya,Ray Rodriguez,0,0,8,3,2,0,1,0,Bantamweight,SUB,Arm Triangle,2,3:09
+"March 13, 2021","Las Vegas, Nevada, USA",win,Nasrat Haqparast,Rafa Garcia,0,0,99,52,0,0,0,0,Lightweight,U-DEC,,3,5:00
+"March 13, 2021","Las Vegas, Nevada, USA",win,JJ Aldrich,Cortney Casey,0,0,45,55,4,0,0,0,Women's Flyweight,S-DEC,,3,5:00
+"March 13, 2021","Las Vegas, Nevada, USA",win,Jinh Yu Frey,Gloria de Paula,0,0,24,31,2,0,2,0,Women's Strawweight,U-DEC,,3,5:00
+"March 13, 2021","Las Vegas, Nevada, USA",win,Matthew Semelsberger,Jason Witt,1,0,3,4,0,0,0,0,Welterweight,KO/TKO,Punch,1,0:16

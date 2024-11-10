@@ -1,0 +1,12 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"January 26, 2013","Chicago, Illinois, USA",win,Demetrious Johnson,John Dodson,0,1,127,57,5,1,0,0,Flyweight,U-DEC,,5,5:00
+"January 26, 2013","Chicago, Illinois, USA",win,Glover Teixeira,Quinton Jackson,1,0,80,53,5,0,0,0,Light Heavyweight,U-DEC,,3,5:00
+"January 26, 2013","Chicago, Illinois, USA",win,Anthony Pettis,Donald Cerrone,1,0,18,4,0,0,0,0,Lightweight,KO/TKO,Kick,1,2:35
+"January 26, 2013","Chicago, Illinois, USA",win,Ricardo Lamas,Erik Koch,0,0,32,14,2,0,0,0,Featherweight,KO/TKO,Elbows,2,2:32
+"January 26, 2013","Chicago, Illinois, USA",win,TJ Grant,Matt Wiman,1,0,54,18,0,0,0,0,Lightweight,KO/TKO,Elbows,1,4:51
+"January 26, 2013","Chicago, Illinois, USA",win,Clay Guida,Hatsu Hioki,0,0,26,41,3,0,0,1,Featherweight,S-DEC,,3,5:00
+"January 26, 2013","Chicago, Illinois, USA",win,Pascal Krauss,Mike Stumpf,0,0,163,63,1,2,1,0,Welterweight,U-DEC,,3,5:00
+"January 26, 2013","Chicago, Illinois, USA",win,Ryan Bader,Vladimir Matyushenko,1,0,3,0,0,0,1,0,Light Heavyweight,SUB,Guillotine Choke,1,0:50
+"January 26, 2013","Chicago, Illinois, USA",win,Shawn Jordan,Mike Russow,0,0,42,25,2,1,0,0,Heavyweight,KO/TKO,,2,3:48
+"January 26, 2013","Chicago, Illinois, USA",win,Rafael Natal,Sean Spencer,0,0,64,12,4,0,4,0,Middleweight,SUB,Arm Triangle,3,2:13
+"January 26, 2013","Chicago, Illinois, USA",win,David Mitchell,Simeon Thoresen,0,0,60,49,1,1,2,0,Welterweight,U-DEC,,3,5:00

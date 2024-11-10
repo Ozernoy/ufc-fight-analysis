@@ -1,0 +1,13 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Santiago Ponzinibbio,Neil Magny,2,0,79,72,0,0,0,0,Welterweight,KO/TKO,Punch,4,2:36
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Ricardo Lamas,Darren Elkins,0,0,70,62,3,3,0,0,Featherweight,KO/TKO,Elbows,3,4:09
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Johnny Walker,Khalil Rountree Jr.,1,0,10,4,0,0,0,0,Light Heavyweight,KO/TKO,Elbow,1,1:57
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Ian Heinisch,Cezar Ferreira,1,0,55,26,1,5,2,0,Middleweight,U-DEC,,3,5:00
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Marlon Vera,Guido Cannetti,1,0,24,24,2,2,2,0,Bantamweight,SUB,Rear Naked Choke,2,1:31
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Cynthia Calvillo,Poliana Botelho,0,0,22,6,2,0,1,0,Women's Strawweight,SUB,Rear Naked Choke,1,4:48
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Michel Prazeres,Bartosz Fabinski,1,0,18,1,1,0,1,0,Welterweight,SUB,Guillotine Choke,1,1:02
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Alexandre Pantoja,Yuta Sasaki,0,0,4,7,0,0,2,0,Flyweight,SUB,Rear Naked Choke,1,2:18
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Austin Arnett,Humberto Bandenay,0,0,74,30,1,2,0,0,Featherweight,U-DEC,,3,5:00
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Laureano Staropoli,Hector Aldana,0,0,97,69,0,0,0,0,Welterweight,U-DEC,,3,5:00
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Jesus Pinedo,Devin Powell,0,0,60,58,5,0,0,0,Lightweight,U-DEC,,3,5:00
+"November 17, 2018","Buenos Aires, Buenos Aires, Argentina",win,Nad Narimani,Anderson Dos Santos,0,0,84,46,1,0,0,1,Featherweight,U-DEC,,3,5:00

@@ -1,0 +1,12 @@
+Event_Date,Event_Location,W_L,Fighter_A,Fighter_B,KD_A,KD_B,STR_A,STR_B,TD_A,TD_B,SUB_A,SUB_B,Weight_Class,Method,Method_Detail,Round,Time
+"January 03, 2015","Las Vegas, Nevada, USA",win,Jon Jones,Daniel Cormier,0,0,92,58,3,1,0,0,Light Heavyweight,U-DEC,,5,5:00
+"January 03, 2015","Las Vegas, Nevada, USA",win,Donald Cerrone,Myles Jury,0,0,37,15,1,1,2,0,Lightweight,U-DEC,,3,5:00
+"January 03, 2015","Las Vegas, Nevada, USA",win,Brad Tavares,Nate Marquardt,0,0,50,30,1,0,0,0,Middleweight,U-DEC,,3,5:00
+"January 03, 2015","Las Vegas, Nevada, USA",win,Kyoji Horiguchi,Louis Gaudinot,0,0,44,23,1,0,0,2,Flyweight,U-DEC,,3,5:00
+"January 03, 2015","Las Vegas, Nevada, USA",ncnc,Hector Lombard,Joshua Burkman,0,0,53,42,2,0,0,0,Welterweight,Overturned,,3,5:00
+"January 03, 2015","Las Vegas, Nevada, USA",win,Paul Felder,Danny Castillo,1,0,33,21,0,0,0,0,Lightweight,KO/TKO,Spinning Back Fist,2,2:09
+"January 03, 2015","Las Vegas, Nevada, USA",win,Cody Garbrandt,Marcus Brimage,2,0,49,43,1,0,0,0,Bantamweight,KO/TKO,Punches,3,4:50
+"January 03, 2015","Las Vegas, Nevada, USA",win,Shawn Jordan,Jared Cannonier,1,0,12,10,0,0,0,0,Heavyweight,KO/TKO,Punch,1,2:57
+"January 03, 2015","Las Vegas, Nevada, USA",win,Evan Dunham,Rodrigo Damm,0,0,152,47,1,0,0,0,Lightweight,U-DEC,,3,5:00
+"January 03, 2015","Las Vegas, Nevada, USA",win,Omari Akhmedov,Mats Nilsson,0,0,64,33,5,5,0,3,Welterweight,U-DEC,,3,5:00
+"January 03, 2015","Las Vegas, Nevada, USA",win,Marion Reneau,Alexis Dufresne,0,0,85,28,0,0,0,0,Women's Bantamweight,U-DEC,,3,5:00
