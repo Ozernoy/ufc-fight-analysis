@@ -1,0 +1,2387 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='events_combined.csv+ (Multiple Connections)' inline='true' name='federated.0244ozw0opcvgt13mc70a1mkz8no' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='events_combined' name='textscan.0ua6i7r0oy4yv11dcvwed1786mtd'>
+            <connection class='textscan' directory='C:/Users/d1411/Документы/Python Projects/Final Project/data/csv/events_processed' filename='events_combined.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='fighters_combined' name='textscan.1hf1dmj0ppx3b113r5mvp1gkq3h9'>
+            <connection class='textscan' directory='C:/Users/d1411/Документы/Python Projects/Final Project/data/csv/fighters_processed' filename='fighters_combined.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[events_combined.csv].[Fighter_B]' />
+              <expression op='[fighters_combined.csv1].[Name]' />
+            </expression>
+          </clause>
+          <relation join='left' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[events_combined.csv].[Fighter_A]' />
+                <expression op='[fighters_combined.csv].[Name]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.0ua6i7r0oy4yv11dcvwed1786mtd' name='events_combined.csv' table='[events_combined#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+                <column datatype='date' name='Event_Date' ordinal='0' />
+                <column datatype='string' name='Event_Location' ordinal='1' />
+                <column datatype='string' name='W_L' ordinal='2' />
+                <column datatype='string' name='Fighter_A' ordinal='3' />
+                <column datatype='string' name='Fighter_B' ordinal='4' />
+                <column datatype='integer' name='KD_A' ordinal='5' />
+                <column datatype='integer' name='KD_B' ordinal='6' />
+                <column datatype='integer' name='STR_A' ordinal='7' />
+                <column datatype='integer' name='STR_B' ordinal='8' />
+                <column datatype='integer' name='TD_A' ordinal='9' />
+                <column datatype='integer' name='TD_B' ordinal='10' />
+                <column datatype='integer' name='SUB_A' ordinal='11' />
+                <column datatype='integer' name='SUB_B' ordinal='12' />
+                <column datatype='string' name='Weight_Class' ordinal='13' />
+                <column datatype='string' name='Method' ordinal='14' />
+                <column datatype='string' name='Method_Detail' ordinal='15' />
+                <column datatype='integer' name='Round' ordinal='16' />
+                <column datatype='datetime' name='Time' ordinal='17' />
+                <column datatype='string' name='event_id' ordinal='18' />
+                <column datatype='integer' name='Time_seconds' ordinal='19' />
+              </columns>
+            </relation>
+            <relation connection='textscan.1hf1dmj0ppx3b113r5mvp1gkq3h9' name='fighters_combined.csv' table='[fighters_combined#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=','>
+                <column datatype='string' name='Name' ordinal='0' />
+                <column datatype='string' name='Record' ordinal='1' />
+                <column datatype='real' name='Height' ordinal='2' />
+                <column datatype='real' name='Weight' ordinal='3' />
+                <column datatype='real' name='Reach' ordinal='4' />
+                <column datatype='string' name='STANCE' ordinal='5' />
+                <column datatype='date' name='DOB' ordinal='6' />
+                <column datatype='real' name='SLpM' ordinal='7' />
+                <column datatype='real' name='Str. Acc.' ordinal='8' />
+                <column datatype='real' name='SApM' ordinal='9' />
+                <column datatype='real' name='Str. Def' ordinal='10' />
+                <column datatype='real' name='TD Avg.' ordinal='11' />
+                <column datatype='real' name='TD Acc.' ordinal='12' />
+                <column datatype='real' name='TD Def.' ordinal='13' />
+                <column datatype='real' name='Sub. Avg.' ordinal='14' />
+                <column datatype='string' name='fighter_id' ordinal='15' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.1hf1dmj0ppx3b113r5mvp1gkq3h9' name='fighters_combined.csv1' table='[fighters_combined#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=','>
+              <column datatype='string' name='Name' ordinal='0' />
+              <column datatype='string' name='Record' ordinal='1' />
+              <column datatype='real' name='Height' ordinal='2' />
+              <column datatype='real' name='Weight' ordinal='3' />
+              <column datatype='real' name='Reach' ordinal='4' />
+              <column datatype='string' name='STANCE' ordinal='5' />
+              <column datatype='date' name='DOB' ordinal='6' />
+              <column datatype='real' name='SLpM' ordinal='7' />
+              <column datatype='real' name='Str. Acc.' ordinal='8' />
+              <column datatype='real' name='SApM' ordinal='9' />
+              <column datatype='real' name='Str. Def' ordinal='10' />
+              <column datatype='real' name='TD Avg.' ordinal='11' />
+              <column datatype='real' name='TD Acc.' ordinal='12' />
+              <column datatype='real' name='TD Def.' ordinal='13' />
+              <column datatype='real' name='Sub. Avg.' ordinal='14' />
+              <column datatype='string' name='fighter_id' ordinal='15' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[events_combined.csv].[Fighter_B]' />
+              <expression op='[fighters_combined.csv1].[Name]' />
+            </expression>
+          </clause>
+          <relation join='left' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[events_combined.csv].[Fighter_A]' />
+                <expression op='[fighters_combined.csv].[Name]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.0ua6i7r0oy4yv11dcvwed1786mtd' name='events_combined.csv' table='[events_combined#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+                <column datatype='date' name='Event_Date' ordinal='0' />
+                <column datatype='string' name='Event_Location' ordinal='1' />
+                <column datatype='string' name='W_L' ordinal='2' />
+                <column datatype='string' name='Fighter_A' ordinal='3' />
+                <column datatype='string' name='Fighter_B' ordinal='4' />
+                <column datatype='integer' name='KD_A' ordinal='5' />
+                <column datatype='integer' name='KD_B' ordinal='6' />
+                <column datatype='integer' name='STR_A' ordinal='7' />
+                <column datatype='integer' name='STR_B' ordinal='8' />
+                <column datatype='integer' name='TD_A' ordinal='9' />
+                <column datatype='integer' name='TD_B' ordinal='10' />
+                <column datatype='integer' name='SUB_A' ordinal='11' />
+                <column datatype='integer' name='SUB_B' ordinal='12' />
+                <column datatype='string' name='Weight_Class' ordinal='13' />
+                <column datatype='string' name='Method' ordinal='14' />
+                <column datatype='string' name='Method_Detail' ordinal='15' />
+                <column datatype='integer' name='Round' ordinal='16' />
+                <column datatype='datetime' name='Time' ordinal='17' />
+                <column datatype='string' name='event_id' ordinal='18' />
+                <column datatype='integer' name='Time_seconds' ordinal='19' />
+              </columns>
+            </relation>
+            <relation connection='textscan.1hf1dmj0ppx3b113r5mvp1gkq3h9' name='fighters_combined.csv' table='[fighters_combined#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=','>
+                <column datatype='string' name='Name' ordinal='0' />
+                <column datatype='string' name='Record' ordinal='1' />
+                <column datatype='real' name='Height' ordinal='2' />
+                <column datatype='real' name='Weight' ordinal='3' />
+                <column datatype='real' name='Reach' ordinal='4' />
+                <column datatype='string' name='STANCE' ordinal='5' />
+                <column datatype='date' name='DOB' ordinal='6' />
+                <column datatype='real' name='SLpM' ordinal='7' />
+                <column datatype='real' name='Str. Acc.' ordinal='8' />
+                <column datatype='real' name='SApM' ordinal='9' />
+                <column datatype='real' name='Str. Def' ordinal='10' />
+                <column datatype='real' name='TD Avg.' ordinal='11' />
+                <column datatype='real' name='TD Acc.' ordinal='12' />
+                <column datatype='real' name='TD Def.' ordinal='13' />
+                <column datatype='real' name='Sub. Avg.' ordinal='14' />
+                <column datatype='string' name='fighter_id' ordinal='15' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.1hf1dmj0ppx3b113r5mvp1gkq3h9' name='fighters_combined.csv1' table='[fighters_combined#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=','>
+              <column datatype='string' name='Name' ordinal='0' />
+              <column datatype='string' name='Record' ordinal='1' />
+              <column datatype='real' name='Height' ordinal='2' />
+              <column datatype='real' name='Weight' ordinal='3' />
+              <column datatype='real' name='Reach' ordinal='4' />
+              <column datatype='string' name='STANCE' ordinal='5' />
+              <column datatype='date' name='DOB' ordinal='6' />
+              <column datatype='real' name='SLpM' ordinal='7' />
+              <column datatype='real' name='Str. Acc.' ordinal='8' />
+              <column datatype='real' name='SApM' ordinal='9' />
+              <column datatype='real' name='Str. Def' ordinal='10' />
+              <column datatype='real' name='TD Avg.' ordinal='11' />
+              <column datatype='real' name='TD Acc.' ordinal='12' />
+              <column datatype='real' name='TD Def.' ordinal='13' />
+              <column datatype='real' name='Sub. Avg.' ordinal='14' />
+              <column datatype='string' name='fighter_id' ordinal='15' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[DOB (fighters_combined.csv1)]' value='[fighters_combined.csv1].[DOB]' />
+          <map key='[DOB]' value='[fighters_combined.csv].[DOB]' />
+          <map key='[Event_Date]' value='[events_combined.csv].[Event_Date]' />
+          <map key='[Event_Location]' value='[events_combined.csv].[Event_Location]' />
+          <map key='[Fighter_A]' value='[events_combined.csv].[Fighter_A]' />
+          <map key='[Fighter_B]' value='[events_combined.csv].[Fighter_B]' />
+          <map key='[Height (fighters_combined.csv1)]' value='[fighters_combined.csv1].[Height]' />
+          <map key='[Height]' value='[fighters_combined.csv].[Height]' />
+          <map key='[KD_A]' value='[events_combined.csv].[KD_A]' />
+          <map key='[KD_B]' value='[events_combined.csv].[KD_B]' />
+          <map key='[Method]' value='[events_combined.csv].[Method]' />
+          <map key='[Method_Detail]' value='[events_combined.csv].[Method_Detail]' />
+          <map key='[Name (fighters_combined.csv1)]' value='[fighters_combined.csv1].[Name]' />
+          <map key='[Name]' value='[fighters_combined.csv].[Name]' />
+          <map key='[Reach (fighters_combined.csv1)]' value='[fighters_combined.csv1].[Reach]' />
+          <map key='[Reach]' value='[fighters_combined.csv].[Reach]' />
+          <map key='[Record (fighters_combined.csv1)]' value='[fighters_combined.csv1].[Record]' />
+          <map key='[Record]' value='[fighters_combined.csv].[Record]' />
+          <map key='[Round]' value='[events_combined.csv].[Round]' />
+          <map key='[SApM (fighters_combined.csv1)]' value='[fighters_combined.csv1].[SApM]' />
+          <map key='[SApM]' value='[fighters_combined.csv].[SApM]' />
+          <map key='[SLpM (fighters_combined.csv1)]' value='[fighters_combined.csv1].[SLpM]' />
+          <map key='[SLpM]' value='[fighters_combined.csv].[SLpM]' />
+          <map key='[STANCE (fighters_combined.csv1)]' value='[fighters_combined.csv1].[STANCE]' />
+          <map key='[STANCE]' value='[fighters_combined.csv].[STANCE]' />
+          <map key='[STR_A]' value='[events_combined.csv].[STR_A]' />
+          <map key='[STR_B]' value='[events_combined.csv].[STR_B]' />
+          <map key='[SUB_A]' value='[events_combined.csv].[SUB_A]' />
+          <map key='[SUB_B]' value='[events_combined.csv].[SUB_B]' />
+          <map key='[Str. Acc. (fighters_combined.csv1)]' value='[fighters_combined.csv1].[Str. Acc.]' />
+          <map key='[Str. Acc.]' value='[fighters_combined.csv].[Str. Acc.]' />
+          <map key='[Str. Def (fighters_combined.csv1)]' value='[fighters_combined.csv1].[Str. Def]' />
+          <map key='[Str. Def]' value='[fighters_combined.csv].[Str. Def]' />
+          <map key='[Sub. Avg. (fighters_combined.csv1)]' value='[fighters_combined.csv1].[Sub. Avg.]' />
+          <map key='[Sub. Avg.]' value='[fighters_combined.csv].[Sub. Avg.]' />
+          <map key='[TD Acc. (fighters_combined.csv1)]' value='[fighters_combined.csv1].[TD Acc.]' />
+          <map key='[TD Acc.]' value='[fighters_combined.csv].[TD Acc.]' />
+          <map key='[TD Avg. (fighters_combined.csv1)]' value='[fighters_combined.csv1].[TD Avg.]' />
+          <map key='[TD Avg.]' value='[fighters_combined.csv].[TD Avg.]' />
+          <map key='[TD Def. (fighters_combined.csv1)]' value='[fighters_combined.csv1].[TD Def.]' />
+          <map key='[TD Def.]' value='[fighters_combined.csv].[TD Def.]' />
+          <map key='[TD_A]' value='[events_combined.csv].[TD_A]' />
+          <map key='[TD_B]' value='[events_combined.csv].[TD_B]' />
+          <map key='[Time]' value='[events_combined.csv].[Time]' />
+          <map key='[Time_seconds]' value='[events_combined.csv].[Time_seconds]' />
+          <map key='[W_L]' value='[events_combined.csv].[W_L]' />
+          <map key='[Weight (fighters_combined.csv1)]' value='[fighters_combined.csv1].[Weight]' />
+          <map key='[Weight]' value='[fighters_combined.csv].[Weight]' />
+          <map key='[Weight_Class]' value='[events_combined.csv].[Weight_Class]' />
+          <map key='[event_id]' value='[events_combined.csv].[event_id]' />
+          <map key='[fighter_id (fighters_combined.csv1)]' value='[fighters_combined.csv1].[fighter_id]' />
+          <map key='[fighter_id]' value='[fighters_combined.csv].[fighter_id]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ru&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₽&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ru_RU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ru&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₽&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ru_RU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ru&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₽&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ru_RU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Event_Date]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>Event_Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Event_Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Event_Location]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>Event_Location</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>W_L</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[W_L]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>W_L</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fighter_A</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fighter_A]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>Fighter_A</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fighter_B</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fighter_B]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>Fighter_B</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KD_A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[KD_A]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>KD_A</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KD_B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[KD_B]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>KD_B</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STR_A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[STR_A]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>STR_A</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STR_B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[STR_B]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>STR_B</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TD_A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TD_A]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>TD_A</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TD_B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TD_B]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>TD_B</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUB_A</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SUB_A]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>SUB_A</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUB_B</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SUB_B]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>SUB_B</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight_Class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weight_Class]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>Weight_Class</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Method]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>Method</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Method_Detail</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Method_Detail]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>Method_Detail</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Round</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Round]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>Round</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Time]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>Time</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[event_id]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>event_id</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_seconds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time_seconds]</local-name>
+            <parent-name>[events_combined.csv]</parent-name>
+            <remote-alias>Time_seconds</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Record</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Record]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>Record</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Height</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Height]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>Height</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Weight]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>Weight</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reach</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Reach]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>Reach</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STANCE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STANCE]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>STANCE</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOB</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DOB]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>DOB</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SLpM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SLpM]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>SLpM</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Str. Acc.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Str. Acc.]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>Str. Acc.</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SApM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SApM]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>SApM</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Str. Def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Str. Def]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>Str. Def</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TD Avg.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TD Avg.]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>TD Avg.</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TD Acc.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TD Acc.]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>TD Acc.</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TD Def.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TD Def.]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>TD Def.</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub. Avg.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sub. Avg.]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>Sub. Avg.</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fighter_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fighter_id]</local-name>
+            <parent-name>[fighters_combined.csv]</parent-name>
+            <remote-alias>fighter_id</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Record</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Record (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>Record</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Height</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Height (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>Height</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Weight (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>Weight</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reach</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Reach (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>Reach</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STANCE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STANCE (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>STANCE</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOB</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DOB (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>DOB</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SLpM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SLpM (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>SLpM</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Str. Acc.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Str. Acc. (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>Str. Acc.</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SApM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SApM (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>SApM</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Str. Def</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Str. Def (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>Str. Def</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TD Avg.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TD Avg. (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>TD Avg.</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TD Acc.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TD Acc. (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>TD Acc.</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TD Def.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TD Def. (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>TD Def.</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sub. Avg.</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sub. Avg. (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>Sub. Avg.</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fighter_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fighter_id (fighters_combined.csv1)]</local-name>
+            <parent-name>[fighters_combined.csv1]</parent-name>
+            <remote-alias>fighter_id</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Gender' datatype='string' name='[Calculation_956170509339090944]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([Weight_Class], &quot;Women&quot;) THEN &quot;female&quot;&#13;&#10;ELSE &quot;male&quot;&#13;&#10;END' />
+      </column>
+      <column aggregation='Hour' datatype='datetime' name='[Time]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='events_combined.csv' datatype='table' name='[__tableau_internal_object_id__].[events_combined.csv_A58A297797B34C508358C745A18F2A02]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/d1411/AppData/Local/Temp/TableauTemp/#TableauTemp_0snxi220e0y4b512gn8ft0n7gnvs.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/11/2024 10:01:15 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[DOB (fighters_combined.csv1)]' value='[Extract].[DOB]' />
+            <map key='[DOB]' value='[Extract].[DOB1]' />
+            <map key='[Event_Date]' value='[Extract].[Event_Date]' />
+            <map key='[Event_Location]' value='[Extract].[Event_Location]' />
+            <map key='[Fighter_A]' value='[Extract].[Fighter_A]' />
+            <map key='[Fighter_B]' value='[Extract].[Fighter_B]' />
+            <map key='[Height (fighters_combined.csv1)]' value='[Extract].[Height]' />
+            <map key='[Height]' value='[Extract].[Height1]' />
+            <map key='[KD_A]' value='[Extract].[KD_A]' />
+            <map key='[KD_B]' value='[Extract].[KD_B]' />
+            <map key='[Method]' value='[Extract].[Method]' />
+            <map key='[Method_Detail]' value='[Extract].[Method_Detail]' />
+            <map key='[Name (fighters_combined.csv1)]' value='[Extract].[Name]' />
+            <map key='[Name]' value='[Extract].[Name1]' />
+            <map key='[Reach (fighters_combined.csv1)]' value='[Extract].[Reach]' />
+            <map key='[Reach]' value='[Extract].[Reach1]' />
+            <map key='[Record (fighters_combined.csv1)]' value='[Extract].[Record]' />
+            <map key='[Record]' value='[Extract].[Record1]' />
+            <map key='[Round]' value='[Extract].[Round]' />
+            <map key='[SApM (fighters_combined.csv1)]' value='[Extract].[SApM]' />
+            <map key='[SApM]' value='[Extract].[SApM1]' />
+            <map key='[SLpM (fighters_combined.csv1)]' value='[Extract].[SLpM]' />
+            <map key='[SLpM]' value='[Extract].[SLpM1]' />
+            <map key='[STANCE (fighters_combined.csv1)]' value='[Extract].[STANCE]' />
+            <map key='[STANCE]' value='[Extract].[STANCE1]' />
+            <map key='[STR_A]' value='[Extract].[STR_A]' />
+            <map key='[STR_B]' value='[Extract].[STR_B]' />
+            <map key='[SUB_A]' value='[Extract].[SUB_A]' />
+            <map key='[SUB_B]' value='[Extract].[SUB_B]' />
+            <map key='[Str. Acc. (fighters_combined.csv1)]' value='[Extract].[Str. Acc.]' />
+            <map key='[Str. Acc.]' value='[Extract].[Str. Acc.1]' />
+            <map key='[Str. Def (fighters_combined.csv1)]' value='[Extract].[Str. Def]' />
+            <map key='[Str. Def]' value='[Extract].[Str. Def1]' />
+            <map key='[Sub. Avg. (fighters_combined.csv1)]' value='[Extract].[Sub. Avg.]' />
+            <map key='[Sub. Avg.]' value='[Extract].[Sub. Avg.1]' />
+            <map key='[TD Acc. (fighters_combined.csv1)]' value='[Extract].[TD Acc.]' />
+            <map key='[TD Acc.]' value='[Extract].[TD Acc.1]' />
+            <map key='[TD Avg. (fighters_combined.csv1)]' value='[Extract].[TD Avg.]' />
+            <map key='[TD Avg.]' value='[Extract].[TD Avg.1]' />
+            <map key='[TD Def. (fighters_combined.csv1)]' value='[Extract].[TD Def.]' />
+            <map key='[TD Def.]' value='[Extract].[TD Def.1]' />
+            <map key='[TD_A]' value='[Extract].[TD_A]' />
+            <map key='[TD_B]' value='[Extract].[TD_B]' />
+            <map key='[Time]' value='[Extract].[Time]' />
+            <map key='[Time_seconds]' value='[Extract].[Time_seconds]' />
+            <map key='[W_L]' value='[Extract].[W_L]' />
+            <map key='[Weight (fighters_combined.csv1)]' value='[Extract].[Weight]' />
+            <map key='[Weight]' value='[Extract].[Weight1]' />
+            <map key='[Weight_Class]' value='[Extract].[Weight_Class]' />
+            <map key='[event_id]' value='[Extract].[event_id]' />
+            <map key='[fighter_id (fighters_combined.csv1)]' value='[Extract].[fighter_id]' />
+            <map key='[fighter_id]' value='[Extract].[fighter_id1]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Event_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Event_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event_Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>987</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Event_Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Event_Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Event_Location</remote-alias>
+              <ordinal>1</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>207</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>W_L</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[W_L]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>W_L</remote-alias>
+              <ordinal>2</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fighter_A</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fighter_A]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fighter_A</remote-alias>
+              <ordinal>3</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1564</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fighter_B</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fighter_B]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fighter_B</remote-alias>
+              <ordinal>4</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1957</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KD_A</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[KD_A]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KD_A</remote-alias>
+              <ordinal>5</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KD_B</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[KD_B]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>KD_B</remote-alias>
+              <ordinal>6</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STR_A</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[STR_A]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STR_A</remote-alias>
+              <ordinal>7</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>225</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STR_B</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[STR_B]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STR_B</remote-alias>
+              <ordinal>8</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>153</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TD_A</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TD_A]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TD_A</remote-alias>
+              <ordinal>9</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TD_B</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TD_B]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TD_B</remote-alias>
+              <ordinal>10</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SUB_A</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SUB_A]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SUB_A</remote-alias>
+              <ordinal>11</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SUB_B</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SUB_B]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SUB_B</remote-alias>
+              <ordinal>12</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weight_Class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weight_Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weight_Class</remote-alias>
+              <ordinal>13</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Method</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Method]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Method</remote-alias>
+              <ordinal>14</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Method_Detail</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Method_Detail]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Method_Detail</remote-alias>
+              <ordinal>15</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Round</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Round]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Round</remote-alias>
+              <ordinal>16</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time</remote-alias>
+              <ordinal>17</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>451</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>event_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[event_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>event_id</remote-alias>
+              <ordinal>18</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>992</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time_seconds</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Time_seconds]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time_seconds</remote-alias>
+              <ordinal>19</ordinal>
+              <family>events_combined.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>451</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name1</remote-alias>
+              <ordinal>20</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1564</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Record1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Record]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Record1</remote-alias>
+              <ordinal>21</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>800</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Height1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Height]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Height1</remote-alias>
+              <ordinal>22</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weight1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Weight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weight1</remote-alias>
+              <ordinal>23</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>66</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reach1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Reach]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reach1</remote-alias>
+              <ordinal>24</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STANCE1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STANCE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STANCE1</remote-alias>
+              <ordinal>25</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DOB1</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DOB]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DOB1</remote-alias>
+              <ordinal>26</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1418</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SLpM1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SLpM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SLpM1</remote-alias>
+              <ordinal>27</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>608</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Str. Acc.1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Str. Acc.]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Str. Acc.1</remote-alias>
+              <ordinal>28</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>66</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SApM1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SApM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SApM1</remote-alias>
+              <ordinal>29</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>558</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Str. Def1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Str. Def]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Str. Def1</remote-alias>
+              <ordinal>30</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TD Avg.1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TD Avg.]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TD Avg.1</remote-alias>
+              <ordinal>31</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>496</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TD Acc.1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TD Acc.]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TD Acc.1</remote-alias>
+              <ordinal>32</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TD Def.1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TD Def.]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TD Def.1</remote-alias>
+              <ordinal>33</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sub. Avg.1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sub. Avg.]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub. Avg.1</remote-alias>
+              <ordinal>34</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fighter_id1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fighter_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fighter_id1</remote-alias>
+              <ordinal>35</ordinal>
+              <family>fighters_combined.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1567</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>36</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1957</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Record</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Record (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Record</remote-alias>
+              <ordinal>37</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>817</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Height</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Height (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Height</remote-alias>
+              <ordinal>38</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weight</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Weight (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weight</remote-alias>
+              <ordinal>39</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reach</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Reach (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reach</remote-alias>
+              <ordinal>40</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STANCE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STANCE (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STANCE</remote-alias>
+              <ordinal>41</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DOB</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DOB (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DOB</remote-alias>
+              <ordinal>42</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1744</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SLpM</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SLpM (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SLpM</remote-alias>
+              <ordinal>43</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>621</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Str. Acc.</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Str. Acc. (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Str. Acc.</remote-alias>
+              <ordinal>44</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SApM</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SApM (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SApM</remote-alias>
+              <ordinal>45</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>676</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Str. Def</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Str. Def (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Str. Def</remote-alias>
+              <ordinal>46</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TD Avg.</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TD Avg. (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TD Avg.</remote-alias>
+              <ordinal>47</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>531</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TD Acc.</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TD Acc. (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TD Acc.</remote-alias>
+              <ordinal>48</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TD Def.</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TD Def. (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TD Def.</remote-alias>
+              <ordinal>49</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>95</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sub. Avg.</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sub. Avg. (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sub. Avg.</remote-alias>
+              <ordinal>50</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fighter_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fighter_id (fighters_combined.csv1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fighter_id</remote-alias>
+              <ordinal>51</ordinal>
+              <family>fighters_combined.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1960</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[events_combined.csv_A58A297797B34C508358C745A18F2A02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Israel&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='events_combined.csv' id='events_combined.csv_A58A297797B34C508358C745A18F2A02'>
+            <properties context=''>
+              <relation join='left' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[events_combined.csv].[Fighter_B]' />
+                    <expression op='[fighters_combined.csv1].[Name]' />
+                  </expression>
+                </clause>
+                <relation join='left' type='join'>
+                  <clause type='join'>
+                    <expression op='='>
+                      <expression op='[events_combined.csv].[Fighter_A]' />
+                      <expression op='[fighters_combined.csv].[Name]' />
+                    </expression>
+                  </clause>
+                  <relation connection='textscan.0ua6i7r0oy4yv11dcvwed1786mtd' name='events_combined.csv' table='[events_combined#csv]' type='table'>
+                    <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+                      <column datatype='date' name='Event_Date' ordinal='0' />
+                      <column datatype='string' name='Event_Location' ordinal='1' />
+                      <column datatype='string' name='W_L' ordinal='2' />
+                      <column datatype='string' name='Fighter_A' ordinal='3' />
+                      <column datatype='string' name='Fighter_B' ordinal='4' />
+                      <column datatype='integer' name='KD_A' ordinal='5' />
+                      <column datatype='integer' name='KD_B' ordinal='6' />
+                      <column datatype='integer' name='STR_A' ordinal='7' />
+                      <column datatype='integer' name='STR_B' ordinal='8' />
+                      <column datatype='integer' name='TD_A' ordinal='9' />
+                      <column datatype='integer' name='TD_B' ordinal='10' />
+                      <column datatype='integer' name='SUB_A' ordinal='11' />
+                      <column datatype='integer' name='SUB_B' ordinal='12' />
+                      <column datatype='string' name='Weight_Class' ordinal='13' />
+                      <column datatype='string' name='Method' ordinal='14' />
+                      <column datatype='string' name='Method_Detail' ordinal='15' />
+                      <column datatype='integer' name='Round' ordinal='16' />
+                      <column datatype='datetime' name='Time' ordinal='17' />
+                      <column datatype='string' name='event_id' ordinal='18' />
+                      <column datatype='integer' name='Time_seconds' ordinal='19' />
+                    </columns>
+                  </relation>
+                  <relation connection='textscan.1hf1dmj0ppx3b113r5mvp1gkq3h9' name='fighters_combined.csv' table='[fighters_combined#csv]' type='table'>
+                    <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=','>
+                      <column datatype='string' name='Name' ordinal='0' />
+                      <column datatype='string' name='Record' ordinal='1' />
+                      <column datatype='real' name='Height' ordinal='2' />
+                      <column datatype='real' name='Weight' ordinal='3' />
+                      <column datatype='real' name='Reach' ordinal='4' />
+                      <column datatype='string' name='STANCE' ordinal='5' />
+                      <column datatype='date' name='DOB' ordinal='6' />
+                      <column datatype='real' name='SLpM' ordinal='7' />
+                      <column datatype='real' name='Str. Acc.' ordinal='8' />
+                      <column datatype='real' name='SApM' ordinal='9' />
+                      <column datatype='real' name='Str. Def' ordinal='10' />
+                      <column datatype='real' name='TD Avg.' ordinal='11' />
+                      <column datatype='real' name='TD Acc.' ordinal='12' />
+                      <column datatype='real' name='TD Def.' ordinal='13' />
+                      <column datatype='real' name='Sub. Avg.' ordinal='14' />
+                      <column datatype='string' name='fighter_id' ordinal='15' />
+                    </columns>
+                  </relation>
+                </relation>
+                <relation connection='textscan.1hf1dmj0ppx3b113r5mvp1gkq3h9' name='fighters_combined.csv1' table='[fighters_combined#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=','>
+                    <column datatype='string' name='Name' ordinal='0' />
+                    <column datatype='string' name='Record' ordinal='1' />
+                    <column datatype='real' name='Height' ordinal='2' />
+                    <column datatype='real' name='Weight' ordinal='3' />
+                    <column datatype='real' name='Reach' ordinal='4' />
+                    <column datatype='string' name='STANCE' ordinal='5' />
+                    <column datatype='date' name='DOB' ordinal='6' />
+                    <column datatype='real' name='SLpM' ordinal='7' />
+                    <column datatype='real' name='Str. Acc.' ordinal='8' />
+                    <column datatype='real' name='SApM' ordinal='9' />
+                    <column datatype='real' name='Str. Def' ordinal='10' />
+                    <column datatype='real' name='TD Avg.' ordinal='11' />
+                    <column datatype='real' name='TD Acc.' ordinal='12' />
+                    <column datatype='real' name='TD Def.' ordinal='13' />
+                    <column datatype='real' name='Sub. Avg.' ordinal='14' />
+                    <column datatype='string' name='fighter_id' ordinal='15' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average fight duration'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='events_combined.csv+ (Multiple Connections)' name='federated.0244ozw0opcvgt13mc70a1mkz8no' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0244ozw0opcvgt13mc70a1mkz8no'>
+            <column datatype='date' name='[Event_Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Time_seconds]' role='measure' type='quantitative' />
+            <column-instance column='[Time_seconds]' derivation='Avg' name='[avg:Time_seconds:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Event_Date]' derivation='Year' name='[yr:Event_Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:Time_seconds:qk]</rows>
+        <cols>[federated.0244ozw0opcvgt13mc70a1mkz8no].[yr:Event_Date:ok]</cols>
+      </table>
+      <simple-id uuid='{6950678D-8E5F-436B-B64D-4C2B48BB3455}' />
+    </worksheet>
+    <worksheet name='Average weight'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='events_combined.csv+ (Multiple Connections)' name='federated.0244ozw0opcvgt13mc70a1mkz8no' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0244ozw0opcvgt13mc70a1mkz8no'>
+            <column datatype='date' name='[Event_Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Weight]' role='measure' type='quantitative' />
+            <column-instance column='[Weight]' derivation='Avg' name='[avg:Weight:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Event_Date]' derivation='Year-Trunc' name='[tyr:Event_Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:Weight:qk]</rows>
+        <cols>[federated.0244ozw0opcvgt13mc70a1mkz8no].[tyr:Event_Date:qk]</cols>
+      </table>
+      <simple-id uuid='{185FB954-A0B9-4302-8E7C-EEE4F9A72E19}' />
+    </worksheet>
+    <worksheet name='Height/Weight correlation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='events_combined.csv+ (Multiple Connections)' name='federated.0244ozw0opcvgt13mc70a1mkz8no' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0244ozw0opcvgt13mc70a1mkz8no'>
+            <column datatype='real' name='[Height]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Weight]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Weight_Class]' role='dimension' type='nominal' />
+            <column-instance column='[Height]' derivation='Avg' name='[avg:Height:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weight]' derivation='Avg' name='[avg:Weight:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weight_Class]' derivation='None' name='[none:Weight_Class:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:Height:qk]' field-type='quantitative' max='195.0' min='160.0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:Weight:qk]' field-type='quantitative' max='140.0' min='20.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0244ozw0opcvgt13mc70a1mkz8no].[none:Weight_Class:nk]' />
+              <text column='[federated.0244ozw0opcvgt13mc70a1mkz8no].[none:Weight_Class:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='dashed' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:Weight:qk]</rows>
+        <cols>[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:Height:qk]</cols>
+      </table>
+      <simple-id uuid='{2D6F91FC-2CE3-4413-B3D5-67274BB442E1}' />
+    </worksheet>
+    <worksheet name='Takedown Accuracy'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='events_combined.csv+ (Multiple Connections)' name='federated.0244ozw0opcvgt13mc70a1mkz8no' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0244ozw0opcvgt13mc70a1mkz8no'>
+            <column datatype='real' name='[TD Acc.]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Weight_Class]' role='dimension' type='nominal' />
+            <column-instance column='[TD Acc.]' derivation='Avg' name='[avg:TD Acc.:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weight_Class]' derivation='None' name='[none:Weight_Class:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:TD Acc.:qk]' />
+              <color column='[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:TD Acc.:qk]' />
+              <text column='[federated.0244ozw0opcvgt13mc70a1mkz8no].[none:Weight_Class:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{942A322A-BD70-428C-B689-41AF0F5A8FE3}' />
+    </worksheet>
+    <worksheet name='Time/Weight correlation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='events_combined.csv+ (Multiple Connections)' name='federated.0244ozw0opcvgt13mc70a1mkz8no' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0244ozw0opcvgt13mc70a1mkz8no'>
+            <column datatype='integer' name='[Time_seconds]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Weight (fighters_combined.csv1)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Weight_Class]' role='dimension' type='nominal' />
+            <column-instance column='[Time_seconds]' derivation='Avg' name='[avg:Time_seconds:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weight (fighters_combined.csv1)]' derivation='Avg' name='[avg:Weight (fighters_combined.csv1):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weight_Class]' derivation='None' name='[none:Weight_Class:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0244ozw0opcvgt13mc70a1mkz8no].[none:Weight_Class:nk]' />
+              <lod column='[federated.0244ozw0opcvgt13mc70a1mkz8no].[none:Weight_Class:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='line-visibility' value='on' />
+                <format attr='line-pattern-only' value='dashed' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:Time_seconds:qk]</rows>
+        <cols>[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:Weight (fighters_combined.csv1):qk]</cols>
+      </table>
+      <simple-id uuid='{EBDB1F6A-ED89-43C0-BB9A-0FE4EBC77F19}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98244' id='7' param='horz' type-v2='layout-flow' w='97698' x='1151' y='878'>
+            <zone h='98244' id='5' type-v2='layout-basic' w='74676' x='1151' y='878'>
+              <zone h='49122' id='3' name='Height/Weight correlation' w='37337' x='1151' y='878'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49122' id='9' name='Average weight' w='37338' x='38489' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49122' id='10' name='Average fight duration' w='37338' x='1151' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49122' id='15' name='Time/Weight correlation' w='37339' x='38488' y='878'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98244' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='23022' x='75827' y='878'>
+              <zone h='37870' id='8' name='Height/Weight correlation' pane-specification-id='0' param='[federated.0244ozw0opcvgt13mc70a1mkz8no].[none:Weight_Class:nk]' type-v2='color' w='23022' x='75827' y='878'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98262' id='13' param='vert' type-v2='layout-flow' w='98914' x='543' y='869'>
+                <zone fixed-size='280' h='49131' id='3' is-fixed='true' name='Height/Weight correlation' w='44026' x='543' y='869'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='37460' id='8' name='Height/Weight correlation' pane-specification-id='0' param='[federated.0244ozw0opcvgt13mc70a1mkz8no].[none:Weight_Class:nk]' type-v2='color' w='10862' x='88595' y='869'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49131' id='9' is-fixed='true' name='Average weight' w='44026' x='44569' y='869'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49131' id='10' is-fixed='true' name='Average fight duration' w='44026' x='543' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0889EDB7-4C38-4516-BE6D-FA0B5BCB45F5}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='3' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9AE58281-F32D-4CAA-9AAD-0E17879CA9E1}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' maximized='true' name='Height/Weight correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0244ozw0opcvgt13mc70a1mkz8no].[none:Weight_Class:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C09812F8-6152-47A9-95DD-C3971D942252}' />
+    </window>
+    <window class='worksheet' name='Time/Weight correlation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A925C3A9-CF52-4040-8A92-9ADED9C7AA2B}' />
+    </window>
+    <window class='worksheet' name='Average weight'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D868CEE9-265B-454E-8EA8-687F45B849E2}' />
+    </window>
+    <window class='worksheet' name='Average fight duration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{27258D91-7CF5-4F92-B402-1A0DD32D66B1}' />
+    </window>
+    <window class='worksheet' name='Takedown Accuracy'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0244ozw0opcvgt13mc70a1mkz8no].[avg:TD Acc.:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{40EA40FF-E580-4D8B-BC6A-A8F24A330404}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Average fight duration'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average weight'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Height/Weight correlation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Time/Weight correlation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{D21E73AC-6278-4472-8785-DFEB40A22CE3}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{861C479F-5231-4E68-9543-F15A1C7CEF47}' />
+    </window>
+  </windows>
+</workbook>
