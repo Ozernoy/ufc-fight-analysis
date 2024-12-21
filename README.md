@@ -63,5 +63,3 @@ Results on test set:
 Feature importance:
 
 ![alt text](images/image-13.png)
-
-# ! There is probably a data leak during feature engineering, this part is still under development
