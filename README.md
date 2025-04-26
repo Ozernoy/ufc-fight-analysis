@@ -1,3 +1,5 @@
+Tableau dashboard: https://public.tableau.com/app/profile/danila.ozernoy/viz/UFCAnalysis_17314057279420/Story1
+
 # UFC fights data analysis
 ## Webscrapping
 The data on the site ufstats.com is presented in the following form with two pages: http://www.ufcstats.com/statistics/events/completed?page=all and http://www.ufcstats.com/statistics/fighters?char=a&page=all
